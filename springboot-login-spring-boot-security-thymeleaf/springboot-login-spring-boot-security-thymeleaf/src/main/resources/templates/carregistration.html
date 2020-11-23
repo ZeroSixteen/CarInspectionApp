@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+	<!-- create navigation bar (header) -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aira-controls="navbar">
+				<span class="sr-only">Toggle Navigation</span> <span
+				class="icon-bar"></span><span class="icon-bar"></span><span
+				class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" th:ref="@{/}">Registration and Login Module</a>
+			</div>	
+		</div>
+	</nav>
+	<br>
+	<br>
+	<!-- create HTML registration form -->
+	<div class = "container">
+		<div class = "row">
+			<div class ="col-md-6 col-md-offset-3">
+			
+			<h1>Car Registration</h1>
+			<form>
+				<div class="form-group">
+					<label class="control-label" for="make">
+						Make
+					</label>
+					<input id="make" class="form-control"  required autofocus="autofocus">
+				
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="model">
+						Model
+					</label>
+					<input id="model" class="form-control"  required autofocus="autofocus">
+				
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="year">
+						Year
+					</label>
+					<input id="year" class="form-control"  required autofocus="autofocus">
+				
+				</div>
+
+				<div class="form-group">
+					<label class="control-label" for="class">
+						Class
+					</label>
+					<select id="class" class="form-control"  required autofocus="autofocus">
+					<option value="Select a Car Classification" disabled >Select a Car Classification</option>
+					<option value="Touring">Touring</option>
+					<option value="B Spec">B Spec</option>
+					<option value="Production">Production</option>
+					<option value="Super Touring">Super Touring</option>
+					<option value="Grand Touring">Grand Touring</option>
+					<option value="Formula">Formula</option>
+					<option value="Spec Miata">Spec Miata</option>
+					<option value="Sports Racing">Sports Racing</option>
+					<option value="Sedan">Sedan</option>
+				</div>
+					<br>
+				<div class="form-group">
+				<button type="submit" class="btn btn-success">Register</button>
+				</div>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
